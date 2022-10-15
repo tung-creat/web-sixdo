@@ -1,0 +1,15 @@
+@media screen and (min-width:48.063rem) and (max-width:61.875rem) {
+   .main_header .logo a img{
+        height:1.875rem;
+    }
+    
+   .menu-header .menu_login .menu_login_main{
+        display:none;
+    }
+    .menu-header .menu_login .menu_login_tablet{
+        display:block;
+    }
+    .c-main-menu{
+        display:none;
+    }
+}

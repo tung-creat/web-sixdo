@@ -1,0 +1,37 @@
+@media screen and (min-width:36rem) and (max-width:48rem) {
+
+    .main_header .logo{
+        display:none;
+    }
+    
+   .menu-header .menu_login .menu_login_main{
+        display:none;
+    }
+    .menu-header .menu_login .menu_login_tablet{
+        display:block;
+    }
+    .c-main-menu{
+        display:none;
+    }
+}
+@media screen and (max-width:36rem)  {
+
+    .main_header .logo{
+        display:none;
+    }
+    
+   .menu-header .menu_login .menu_login_main{
+        display:none;
+    }
+    .menu-header .menu_login .menu_login_tablet{
+        display:block;
+    }
+    .c-main-menu{
+        display:none;
+    }
+    .main_page .new-arrival .new-arrival-title a{
+        font-size:20px;
+    }
+    
+   
+}
