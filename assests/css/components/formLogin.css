@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@97.7,554;100,400&display=swap');
+.c_mem_overlay{
+    background-color:rgba(63, 62, 62, 0.447);
+    z-index:10000;
+}
+#form-login{
+   position:absolute;
+   top:0;
+   right:0;
+   bottom:0;
+   width:360px;;
+    height:100vh;
+    background-color:#f6f3e4;   
+}
+.form-login #btn-close{
+   color:#212121bc;
+   text-decoration: none;
+   font-size :50px;
+}
+.form-login .form-login-title p {
+    font-size:43px;
+}
+.form-login-nav{
+    list-style:none;
+    
+}
+.form-login-nav li{
+    position:relative;
+    border-bottom:1px solid rgba(4, 4, 4, 0.138);
+    width:50%;
+    text-align: center;
+    cursor:pointer;
+    
+}
+.form-login-nav li a{
+    text-decoration: none;
+    font-size:20px;  
+   opacity:0.5;
+   text-transform:uppercase;
+
+}
+.form-login-nav li.active{
+     border-bottom:3px solid rgba(4, 4, 4, 0.958);
+     
+}
+.form-login-nav li.active a{
+    opacity:1;
+    font-weight: bold;
+}
+.form-login-main-registration input , .form-login-main-sign-in input{
+    width:100%;
+    padding:10px;
+    border-right:none;
+    border-top:none;
+    border-left:none;
+    background-color:inherit;
+    outline:none; 
+    font-size:20px;
+    border-bottom: 1px solid rgba(4, 4, 4, 0.138);
+}
+.form-login-main-registration input::placeholder,.form-login-main-sign-in input::placeholder{
+    opacity:0.5;
+}
+.form-login-with-social .form-login-with-social-main a{
+    text-decoration: none;
+    color:black;
+}
+.form-login-with-social .form-login-with-social-main a:last-child{
+    margin-left:60px;
+}
+.form-login-with-social .form-login-with-social-main a i{
+        padding:15px 18px;
+        border-radius: 50%;
+        border:1px solid black;
+        font-size:23px;
+
+}
+.form-login-with-social .form-login-with-social-main a:first-child i{
+    padding:15px 20px;
+}
+.form-login-with-social .form-login-with-social-main a p{
+    font-size:15px;
+    font: weight 200;
+    opacity:0.7;
+}
+.form-login-with-social .form-login-with-social-main a:first-child:hover{
+    color:blue;
+}
+.form-login-with-social .form-login-with-social-main a:first-child:hover i{
+    border-color: blue;
+}
+.form-login-with-social .form-login-with-social-main a:last-child:hover{
+    color:rgb(255, 111, 0);
+}
+.form-login-with-social .form-login-with-social-main a:last-child:hover i{
+    border-color: rgb(255, 111, 0);
+}

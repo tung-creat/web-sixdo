@@ -38,8 +38,8 @@ body {
 .menu_login_tablet {
   display: none;
 }
-.menu_login_tablet a {
-  font-size: 1.875rem;
+.menu_login_tablet i {
+  font-size: 1.563rem;
 }
 .c-main-menu-list {
   list-style: none;

@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="./assests/css/reponsive/Laptop.css">
     <link rel="stylesheet" type="text/css" href="./assests/css/reponsive/Tablet.css">
     <link rel="stylesheet" type="text/css" href="./assests/css/reponsive/Mobile.css">
+    <link rel="stylesheet" type="text/css" href="./assests/css/components/formLogin.css">
 </head>
 
 <body>
@@ -48,13 +49,13 @@
                                     </a>
                                 </div>
                                 <div class="menu_login_tablet hiden">
-                                    <a title="Bar" class="pe-2 ps-2" href="javascript:void(0)">
-                                        <i class="fas fa-bars"></i>
+                                    <a title="Bar" class="pe-2  ps-2" href="javascript:void(0)">
+                                        <i class="fas fa-bars  "></i>
                                     </a>
                                     <a title="Cart" class="pe-2 ps-2" href="javascript:void(0)">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fas fa-shopping-cart text-dark"></i>
                                     </a>
-                                    <a href="javascript:void(0)" title="Language" class="pe-2 ps-2">
+                                    <a href="javascript:void(0)" title="Language" class=" mt-n1 pe-2 ps-2">
                                         <img src="./assests/img/language_en.png" />
                                     </a>
                                 </div>
@@ -107,6 +108,7 @@
             </div>
 
         </header>
+
         <div class="banner-slide">
             <div class="banner-slide-item">
                 <a href="#">
@@ -466,10 +468,80 @@
             </div>
             <hr class="mt-4 mb-2">
             <div class="coppyRight text-center mb-5">
-                    &#169; Phạm Xuân Tùng 
+                &#169; Phạm Xuân Tùng
             </div>
         </footer>
+        <div class=" c_mem_overlay position-fixed top-0 start-0 bottom-0 end-0 zindex-modal hidden">
+            <div class="form-login container ps-3" id="form-login">
+                <a id="btn-close" href="javascript:void(0)" class="form-login-btn-close">
+                    <button type="button" class="btn-close btn-close-dark fs-5" aria-label="Close"></button>
+                </a>
+                <div class="form-login-title">
+                    <p class="text-uppercase">
+                        Tài Khoản
+                    </p>
+                </div>
+                <ul class=" form-login-nav mb-4 nav nav-bar d-flex justify-content-around ">
+                    <li class="p-2 active">
+                        <a href="javascript:void(0)" class="text-dark active" id="registration" title="Đăng Ký">Đăng
+                            Ký</a>
+                    </li>
+                    <li class="p-2">
+                        <a href="javascript:void(0)" class="text-dark" id="sing-in" title="Đăng Nhập">Đăng Nhập</a>
+                    </li>
+                </ul>
+                <div class="form-login-main">
+                    <form class="form form-login-main-registration hidden">
+                        <div class="form-group mb-3">
+                            <input name="email" type="email" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input name="SDT" type="text" placeholder="Số điện thoại*">
+                        </div>
+                        <div class="form-group  mb-3">
+                            <input name="userName" type="text" placeholder="Nhập họ và tên*">
+                        </div>
+                        <div class="form-group  mb-4">
+                            <input type="password" placeholder="Mật Khẩu*">
+                        </div>
+
+                        <button type="submit" class="btn btn-dark text-white text-uppercase container p-3">Đăng
+                            Ký</button>
+                    </form>
+                    <form class="form form-login-main-sign-in ">
+                        <div class="form-group  mb-3">
+                            <input name="userName" type="email" placeholder="Email hoặc số điện thoại">
+                        </div>
+                        <div class="form-group  mb-3">
+                            <input name="password" type="password" placeholder="Mật khẩu">
+                        </div>
+                        <div class="form-group  mb-3 text-center ">
+                            <a class="text-dark text-center" style="text-decoration: none;" href="#"
+                                title="Quên mật khẩu">Quên mật khẩu ?</a>
+                        </div>
+                        <button type="submit" class="btn btn-dark text-white text-uppercase container p-3 ">Đăng
+                            nhập</button>
+                    </form>
+                </div>
+                <div class="form-login-with-social">
+                    <p class="text-center mt-4 fs-6">Hoặc đăng nhập bằng</p>
+                    <div class="form-login-with-social-main d-flex justify-content-center">
+                        <a href="#" class=" face-book-social ">
+                            <i class="fab fa-facebook-f"></i>
+                            <p class="text-center mt-2">Facebook</p>
+
+                        </a>
+
+                        <a href="#" class="google-social">
+                            <i class="fab fa-google"></i>
+                            <p class="text-center mt-2 fs-6">Google</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 </body>
 
 </html>
