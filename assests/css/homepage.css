@@ -11,31 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-.banner-slide {
-  overflow: hidden;
-  position: relative;
-  margin-top: 100px;
-}
-.banner-slide .banner-slide-item {
-  width: 100%;
-}
-
-.banner-slide .dot-slide {
-  position: absolute;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-}
-.banner-slide .dot-slide .dot-slide-item {
-  background-color: #a8a5a3;
-  width: 0.75rem;
-  height: 0.75rem;
-  border-radius: 50%;
-  border: none;
-  margin-left: 20px;
-}
 .main_page .new-arrival .new-arrival-title {
   margin-top: 3.125rem;
   margin-bottom: 1.25rem;

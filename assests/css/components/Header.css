@@ -29,6 +29,42 @@ header {
   border-right: 1px solid #787777;
   margin-left: 1.563rem;
 }
+.menu_login .menu_login_main #btn_open_search .menu_login_search_box {
+  position: absolute;
+  right: 0;
+  bottom: 46px;
+  z-index: 10000;
+  width: 0;
+  transition: width 0.5s ease;
+  /* -webkit-transition: bottom 1s,width 1s ease;
+  -moz-transition: bottom 1s,width 1s ease;
+  -o-transition:bottom 1s,width 1s ease; */ 
+}
+.menu_login .menu_login_main #btn_open_search.active .menu_login_search_box {
+  width:400px;
+  right:42%;
+  bottom:-46px;
+  
+}
+
+.menu_login .menu_login_search_box input {
+  width: 100%;
+  border: none;
+  background-color: #444444;
+  outline: none;
+  color: white;
+  padding: 8px 40px 8px 10px;
+}
+.menu_login .menu_login_search_box form span {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  color: white;
+  transform: translateY(-50%);
+}
+.menu_login .menu_login_search_box input:placeholder {
+  color: rgb(255, 255, 255);
+}
 .menu_login_tablet {
   display: none;
 }
@@ -37,7 +73,6 @@ header {
 }
 .c-main-menu-list {
   list-style: none;
- 
 }
 .c-main-menu-list li {
   position: relative;
@@ -45,7 +80,7 @@ header {
 .c-main-menu-list li:hover:after {
   content: "";
   position: absolute;
-  bottom: -25px;
+  bottom: -5px;
   left: -20px;
   width: 100%;
   border-bottom: 2px solid black;

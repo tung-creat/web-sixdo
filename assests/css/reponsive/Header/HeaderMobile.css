@@ -20,16 +20,7 @@
   .main_header .logo {
     display: none;
   }
-  .banner-slide {
-    margin-top: 0;
-    z-index: 1000;
-  }
-  .banner-slide-item {
-    display: none;
-  }
-  .banner-slide-item-moblie {
-    display: block;
-  }
+  
   .menu-header .menu_login .menu_login_main {
     display: none;
   }

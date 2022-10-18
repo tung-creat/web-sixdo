@@ -1,5 +1,6 @@
-@media screen and (min-width:61.938) and (max-width:63.938rem) {
-   .main_header .logo a img{
+@media screen and (min-width:61.938rem) and (max-width:64rem) {
+    
+    .main_header .logo a img{
         height:1.875rem;
     }
     .menu_login{
