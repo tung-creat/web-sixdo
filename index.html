@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sixdo</title>
+    <meta name="description" content="SIXDO thương hiệu thời trang của NTK Đỗ Mạnh Cường">
+    <meta name="keywords" content="SIXDO thương hiệu thời trang của NTK Đỗ Mạnh Cường">
+    <title>SIX DO BY DO MANH CUONG</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="./assests/font-icon/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assests/css/Header.css">
     <link rel="stylesheet" type="text/css" href="./assests/css/homepage.css">
-    <link rel="stylesheet" type="text/css" href="./assests/css/reponsive/Laptop.css">
-    <link rel="stylesheet" type="text/css" href="./assests/css/reponsive/Tablet.css">
-    <link rel="stylesheet" type="text/css" href="./assests/css/reponsive/Mobile.css">
+    <link rel="stylesheet" type="text/css" href="./assests/css/reponsive//Header/HeaderLaptop.css">
+    <link rel="stylesheet" type="text/css" href="./assests/css/reponsive//Header/HeaderTablet.css">
+    <link rel="stylesheet" type="text/css" href="./assests/css/reponsive/Header/HeaderMobile.css">
     <link rel="stylesheet" type="text/css" href="./assests/css/components/formLogin.css">
+    <link type="image/x-icon" href="./assests/img/favicon.ico" rel="icon">
 </head>
 
 <body>
@@ -30,7 +34,7 @@
                         <div class="menu-header">
                             <div class="menu_login d-flex justify-content-end mb-3">
                                 <div class="menu_login_main">
-                                    <a title="Login" class="pe-2 ps-2" href="javascript:void(0)">
+                                    <a title="Login" id="btn-open-login" class="pe-2 ps-2" href="javascript:void(0)">
                                         <i class="far fa-user"></i>
                                         <span>Login</span>
                                     </a>
@@ -49,7 +53,7 @@
                                     </a>
                                 </div>
                                 <div class="menu_login_tablet hiden">
-                                    <a title="Bar" class="pe-2  ps-2" href="javascript:void(0)">
+                                    <a title="Bar" id="menu_bar" class="pe-2  ps-2" href="javascript:void(0)">
                                         <i class="fas fa-bars fs-1"></i>
                                     </a>
                                     <a title="Cart" class="pe-2 ps-2" href="javascript:void(0)">
@@ -125,16 +129,23 @@
                     <img src="./assests/img/banner/banner-3.jpg" style="width: 100%; height:auto" />
                 </a>
             </div>
-            <div class="banner-slide-item hidden">
-                <a href="#">
+            <div class="banner-slide-item hidden container">
+                <a href="#" class="container">
                     <img src="./assests/img/banner/banner-4.jpg" style="width: 100%; height:auto" />
                 </a>
             </div>
+
             <div class="dot-slide">
                 <button class="dot-slide-item active"></button>
                 <button class="dot-slide-item"></button>
                 <button class="dot-slide-item"></button>
                 <button class="dot-slide-item"></button>
+            </div>
+            <div class="banner-slide-item-moblie hidden">
+                <a href="#">
+                    <img src="https://sixdo.vn/images/banners/mresized/doc-web-1-1665806573.jpg"
+                        style="width: 100%; height:auto" />
+                </a>
             </div>
         </div>
         <main class="main_page container-md">
@@ -473,7 +484,7 @@
         </footer>
         <div class=" c_mem_overlay position-fixed top-0 start-0 bottom-0 end-0 zindex-modal hidden">
             <div class="form-login container ps-3" id="form-login">
-                <a id="btn-close" href="javascript:void(0)" class="form-login-btn-close">
+                <a id="btn-close-login" href="javascript:void(0)" class="form-login-btn-close">
                     <button type="button" class="btn-close btn-close-dark fs-5" aria-label="Close"></button>
                 </a>
                 <div class="form-login-title">
@@ -491,29 +502,29 @@
                     </li>
                 </ul>
                 <div class="form-login-main">
-                    <form class="form form-login-main-registration hidden">
+                    <form class="form form-login-main-registration ">
                         <div class="form-group mb-3">
-                            <input name="email" type="email" placeholder="Nhập email của bạn">
+                            <input name="email" type="email" placeholder="Nhập email của bạn" />
                         </div>
                         <div class="form-group mb-3">
                             <input name="SDT" type="text" placeholder="Số điện thoại*">
                         </div>
                         <div class="form-group  mb-3">
-                            <input name="userName" type="text" placeholder="Nhập họ và tên*">
+                            <input name="userName" type="text" placeholder="Nhập họ và tên*" />
                         </div>
                         <div class="form-group  mb-4">
-                            <input type="password" placeholder="Mật Khẩu*">
+                            <input type="password" placeholder="Mật Khẩu*" />
                         </div>
 
                         <button type="submit" class="btn btn-dark text-white text-uppercase container p-3">Đăng
                             Ký</button>
                     </form>
-                    <form class="form form-login-main-sign-in ">
+                    <form class="form form-login-main-sign-in hidden ">
                         <div class="form-group  mb-3">
-                            <input name="userName" type="email" placeholder="Email hoặc số điện thoại">
+                            <input name="userName" type="email" placeholder="Email hoặc số điện thoại" />
                         </div>
                         <div class="form-group  mb-3">
-                            <input name="password" type="password" placeholder="Mật khẩu">
+                            <input name="password" type="password" placeholder="Mật khẩu" />
                         </div>
                         <div class="form-group  mb-3 text-center ">
                             <a class="text-dark text-center" style="text-decoration: none;" href="#"
@@ -540,8 +551,84 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div class="c-box-mmenu p-3 ">
+            <a href="javascript:void(0)" id ="btn_close_c_box_mmenu" class="btn-close" title="close"></a>
+            <div class="c-box_msearch">
+                <a href="#" class="c-box-menu-logo mb-2" title="Sixdo logo">
+                    <img src="./assests/img/logo_Mobile.png" class="img-fluid img-reponsive" alt="logo" />
+                </a>
+                <div class="search-box ">
+                    <form class="form row" action="#" method="post">
+                        <input type="text" class="col ps-5 pe-5" placeholder="Gõ từ khóa tìm kiếm" name="keyWord" />
+                    </form>
+                </div>
+            </div>
+            <ul class="c-menu_mobile mt-2 container-fluid">
+                <li class="c-menu_mobile_item row">
+                    <a href="javascript:void(0)" class="text-uppercase">
+                        Sản Phẩm
+                        <span class="arrow-product"><i class="fas fa-angle-right"></i></span>
+                    </a>
+                    <ul class="dropdown_menu ps-2" id="menu_level2_product">
+                        <li class="dropdown_menu-item row"><a href="#" alt="Thời trang nữ" class="text-uppercase">Thời trang nữ</a></li>
+                        <li class="dropdown_menu-item row"><a href="#" alt="Phụ kiện" class="text-uppercase">Phụ Kiện</a></li>
+                        <li class="dropdown_menu-item row"><a href="#" alt="kid" class="text-uppercase">Kid</a></li>
+                        <li class="dropdown_menu-item row"><a href="#" alt="Thời trang nam" class=" text-uppercase">Thời trang nam</a></li>
+                        <li class="dropdown_menu-item row"><a href="#" alt="Sale 70%" class="text-uppercase">Sale 70%</a></li>
+                    </ul>
+                </li>
+                <li class="c-menu_mobile_item row">
+                    <a href="#">
+                        Bộ sưu tập
+                    </a>
+                </li>
+                <li class="c-menu_mobile_item row">
+                    <a href="#">
+                        Fashion Show
+                    </a>
+                </li>
+                <li class="c-menu_mobile_item row">
+                    <a href="#">
+                        SixClub
+                    </a>
+                </li>
+                <li class="c-menu_mobile_item row">
+                    <a href="#">
+                        WWS
+                    </a>
+                </li>
 
+                <li class="c-menu_mobile_item row">
+                    <a href="#">
+                        Giới thiệu
+                        <span class="arrow-intro">
+                            <i class="fas fa-angle-right"></i>
+                        </span>
+                    </a>
+                    <ul class="dropdown_menu ps-2" id="menu_level2_intro">
+                        <li class="dropdown_menu-item row"><a href="#" alt="Thời trang nữ" class="text-uppercase">Câu chuyện thương hiệu</a>
+                        </li>
+                        <li class="dropdown_menu-item row"><a href="#" alt="Phụ kiện" class="text-uppercase">Chính sách</a></li>
+                        <li class="dropdown_menu-item row"><a href="#" alt="kid" class="text-uppercase">Báo chí</a></li>
+                        <li class="dropdown_menu-item row"><a href="#" alt="Thời trang nam" class=" text-uppercase">Tuyển dụng</a></li>
+                        <li class="dropdown_menu-item row"><a href="#" alt="Sale 70%" class="text-uppercase">Liên hệ</a></li>
+                    </ul>
+                </li>
+                <li class="c-menu_mobile_item row">
+                    <a href="#">
+                        Cửa hàng
+                    </a>
+                </li>
+                <li class="c-menu_mobile_item row">
+                    <a id="btn_open_login_mobile" href="javascript:void(0)">
+                        Đăng Nhập
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="./assests/js/index.js"></script>
 </body>
 
 </html>
