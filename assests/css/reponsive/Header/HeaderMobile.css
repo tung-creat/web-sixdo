@@ -1,4 +1,7 @@
 @media screen and (min-width: 36rem) and (max-width: 48rem) {
+  header{
+    position:absolute;
+  }
   .main_header .logo {
     display: none;
   }

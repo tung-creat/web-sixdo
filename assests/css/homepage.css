@@ -47,7 +47,6 @@ body {
   left: 0;
   opacity: 0;
   z-index: 999;
-
   -webkit-transition: all 0.35s ease-in;
   transition: all 0.35s ease-in;
 }
@@ -135,83 +134,5 @@ body {
   display: none;
 }
 
-  .c-box-mmenu{
-    position:fixed;
-    top:0;
-    left:-2000px;
-  }
-@media screen and (max-width: 61.875rem) {
-   .c-box-mmenu{
-    position: fixed;
-    top: 0;
-    left: -200px;
-    width: 0;
-    height: 0;
-    background-color: #fff;
-    z-index: 20002;
-    overflow-y: scroll;
-    transition: width 0.5s, height 0.5s ease;
-    -webkit-transition: width 0.5s, height 0.5s ease;
-    -moz-transition: width 0.5s, height 0.5s ease;
-    -o-transition: width 0.5s, height 0.5s ease;
- }
-  .c-box-mmenu.show {
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-  }
-  .c-box-mmenu a.btn-close {
-    text-decoration: none;
-    opacity: 0.5;
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    font-size: 1.25rem;
-  }
-  .c-box-mmenu .c-box_msearch .c-box-menu-logo {
-    display: block;
-    margin-top: 15px;
-  }
-  .c-box-mmenu .c-box_msearch .search-box {
-    padding: 12px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.229);
-  }
-  .c-box-mmenu .c-box_msearch .search-box form input {
-    border: none;
-    outline: none;
-    background-color: inherit;
-  }
-  .c-box-mmenu ul.c-menu_mobile {
-    list-style: none;
-  }
-  .c-box-mmenu ul.c-menu_mobile li.c-menu_mobile_item:last-child a {
-    border: none;
-  }
-  .c-box-mmenu ul.c-menu_mobile li a {
-    color: rgba(0, 0, 0, 0.375);
-    text-decoration: none;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.229);
-  }
-  .c-box-mmenu ul.c-menu_mobile li a:first-child span {
-    float: right;
-    clear: both;
-    margin-right: 30px;
-  }
-  .c-box-mmenu ul.c-menu_mobile li a:first-child span i {
-    font-size: 1.25rem;
-  }
-  .c-box-mmenu ul.c-menu_mobile .c-menu_mobile_item .dropdown_menu {
-    list-style: none;
-  }
-  .c-box-mmenu
-    ul.c-menu_mobile
-    .c-menu_mobile_item
-    .dropdown_menu
-    .dropdown_menu-item {
-    padding-left: 40px;
-  }
-  .c-box-mmenu ul.c-menu_mobile .c-menu_mobile_item .dropdown_menu-item a {
-    color: rgba(0, 0, 0, 0.867);
-  }
-}
+
+

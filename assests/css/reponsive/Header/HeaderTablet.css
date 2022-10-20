@@ -1,5 +1,8 @@
 @media screen and (min-width:48.063rem) and (max-width:62.125rem) {
-   .main_header .logo a img{
+    header{
+        position:absolute;
+    }
+    .main_header .logo a img{
         height:1.875rem;
     }
     

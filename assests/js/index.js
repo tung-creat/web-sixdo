@@ -69,9 +69,58 @@ const app = {
       }
     };
   },
+  handleSlide: function () {
+    let banner = $$(".banner-slide .banner-slide-item");
+    let dot = $$(".dot-slide .dot-slide-item");
+    let index = 0;
+    let preIndex;
+    let checkUserClick = false;
+    banner[index].classList.add("active");
+    dot[index].classList.add("active");
+    setInterval(() => {
+      if (!checkUserClick) {
+        preIndex = index;
+        if (index < banner.length - 1) {
+          index++;
+        } else {
+          index = 0;
+        }
+        banner[preIndex].classList.remove("active");
+        dot[preIndex].classList.remove("active");
+        banner[index].classList.add("active");
+        dot[index].classList.add("active");
+      }
+    }, 3000);
+    for (let i = 0; i < banner.length; i++) {
+      // catch event when user click dot bannner
+      dot[i].onclick = () => {
+        checkUserClick = true;
+        banner[i].classList.add("active");
+        dot[i].classList.add("active");
+        banner[index].classList.remove("active");
+        dot[index].classList.remove("active");
+        index = i;
+        setTimeout(() => {
+          checkUserClick = false;
+        }, 4000);
+      };
+    }
+  },
+  handleEventMenuTablet: function () {
+    let btnArrowInMenu = $$(".c-menu_mobile_item .arrow-detail");
 
+    for (let i = 0; i < btnArrowInMenu.length; i++) {
+      btnArrowInMenu[i].onclick = (e) => {
+       
+          btnArrowInMenu[i].parentElement.parentElement.classList.toggle("active");
+      
+      };
+    }
+  },
   start: function () {
     this.handleEvents();
+    this.handleSlide();
+    this.handleEventMenuTablet();
   },
 };
 app.start();
